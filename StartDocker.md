@@ -43,30 +43,6 @@
 <img width="960" alt="docker 물리적 위치" src="https://user-images.githubusercontent.com/55985789/80592825-0e03ab80-8a5b-11ea-9526-5b0f23a04154.png">
 
 
-***
-## Docker 더 다뤄보기!
-
->### $ docker rename [컨테이너 이름] 
->>#### : 컨테이너 이름 변경하는 명령어.
->>>#### : myubuntu를 yourubuntu로 변경하였다.
->>><img width="814" alt="마이우분투를 유어우분투로 리네임" src="https://user-images.githubusercontent.com/55985789/80593891-f4636380-8a5c-11ea-9a6c-068a07936648.png">
->>>이름 바꾼 후 $ docker ps -a로 프로세스를 체크해보면 name이 yourubuntu로 바뀐 것이 보인다.
->>><img width="838" alt="이름 바꾼 후 실행 해보고 실행 상태 체크" src="https://user-images.githubusercontent.com/55985789/80593937-07763380-8a5d-11ea-95d7-fdea2b8c31b3.png">
->>>바뀌기 전 이름인 myubuntu로 실행 시 에러가 나타난다.
->>><img width="742" alt="바뀌기 전 이름으로 실행 시 에러!!" src="https://user-images.githubusercontent.com/55985789/80594065-4d32fc00-8a5d-11ea-9207-9b92d1eb208d.png">
-
-### $ docker rm [컨테이너 이름]
-#### 조심해서 써야한다. 함부로 삭제는 위험하다. 저기 -f를 붙여 실행 중에도 강제삭제를 할 수 있으나 몰라도 된다.
-<img width="656" alt="컨테이너 삭제" src="https://user-images.githubusercontent.com/55985789/80594398-dfd39b00-8a5d-11ea-8cb5-9d09a49a03ff.png">
-
-
-***
-## Docker에 익숙해지기
-### $ 컨테이너 실행 후 실행 상태 확인 (up으로 바뀜)
-<img width="764" alt="컨테이너 실행 후 실행 확인" src="https://user-images.githubusercontent.com/55985789/80594180-853a3f00-8a5d-11ea-9563-668a4256d84b.png">
-
-### $ 컨테이너 종료 후 종료 확인 (exit으로 바뀜)
-<img width="750" alt="컨테이너 종료 후 종료 확인" src="https://user-images.githubusercontent.com/55985789/80594254-a4d16780-8a5d-11ea-87ea-532c48b71a05.png">
 
 
 
