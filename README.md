@@ -13,4 +13,6 @@
 
 #### [5.Docker MySQL설치 및 컨테이너 생성하기](https://github.com/JeongJae-yun/Docker_experience/blob/master/CreateMySQL_container.md)
 
+#### [6.Ubuntu 기본 명령어 사용하기](https://github.com/JeongJae-yun/Docker_experience/blob/master/Ubuntu_1.md)
+
 
