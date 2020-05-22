@@ -46,8 +46,13 @@
 >><img width="401" alt="3  Hello txt 만들기 root로" src="https://user-images.githubusercontent.com/55985789/82624116-c79a0a80-9c1c-11ea-8d0b-3fd2df87aea4.png">
 
 >>###  $ sudo chown jeong:jeong Hello.txt
+>>#### change owner jeong으로 hello.txt파일을!!
 >>#### Hello.txt에 대한 권한을 jeong으로 바꾼다. 위와 다르게 권한이 jeong으로 바뀐것을 확인할 수 있다.
 >><img width="502" alt="4 jeong으로 바꿈" src="https://user-images.githubusercontent.com/55985789/82624299-26f81a80-9c1d-11ea-9aba-f7dafa111ec0.png">
+
+>>#### 물론 그냥 jeong 계정으로 들어와서 Hello.txt 파일을 생성해도 Hello.txt에 대한 권한이 root와 jeong이 동일할텐데
+>>#### 굳이 root로 생성하고 chown을 써보자고 저렇게 바꾸었다. 
+>>#### 그냥 자신의 계정으로 들어와서 생성해도 가능하다!
 
 
 
