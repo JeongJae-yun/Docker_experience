@@ -31,7 +31,7 @@
                                                                               
 >## :two:	4개 디렉토리 생성하기
 >>###  $ mkdir document (동일하게 download, workspace, bin도 생성)
->>#### : jeong 계정으로 4개의 디렉토리를 생성한다. 
+>>#### : root계정으로 4개의 디렉토리를 생성한다. 
 >><img width="518" alt="1 4개디렉토리 생성하기 root로" src="https://user-images.githubusercontent.com/55985789/82623925-59edde80-9c1c-11ea-8ae8-cae68f3a934e.png">
 
 ****   
