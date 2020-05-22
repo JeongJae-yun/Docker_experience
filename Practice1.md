@@ -50,6 +50,11 @@
 >>#### Hello.txt에 대한 권한을 jeong으로 바꾼다. 위와 다르게 권한이 jeong으로 바뀐것을 확인할 수 있다.
 >><img width="502" alt="4 jeong으로 바꿈" src="https://user-images.githubusercontent.com/55985789/82624299-26f81a80-9c1d-11ea-9aba-f7dafa111ec0.png">
 
+>>#### 추가적으로 root권한, 사용자권한의 차이를 알기 위해 따로 root권한으로 파일을 생성해보았다.
+>>#### root권한 생성했을 경우, 없던 write권한이 생겼다..! 
+>><img width="473" alt="새로 파일만들어봄 권한이 다름" src="https://user-images.githubusercontent.com/55985789/82624976-e7323280-9c1e-11ea-949a-55b10b5fc4ec.png">
+
+
 >>#### 물론 그냥 jeong 계정으로 들어와서 Hello.txt 파일을 생성해도 Hello.txt에 대한 권한이 root와 jeong이 동일할텐데
 >>#### 굳이 root로 생성하고 chown을 써보자고 저렇게 바꾸었다. 
 >>#### 그냥 자신의 계정으로 들어와서 생성해도 가능하다!
