@@ -32,14 +32,23 @@
 >## :two:	4개 디렉토리 생성하기
 >>###  $ mkdir document (동일하게 download, workspace, bin도 생성)
 >>#### : jeong 계정으로 4개의 디렉토리를 생성한다. 
->><img width="463" alt="3  jeong으로 4개 디렉토리 생성" src="https://user-images.githubusercontent.com/55985789/82142679-07f23500-9879-11ea-9eb6-ec82f0fd12ef.png">
+>><img width="518" alt="1 4개디렉토리 생성하기 root로" src="https://user-images.githubusercontent.com/55985789/82623925-59edde80-9c1c-11ea-8ae8-cae68f3a934e.png">
 
 ****   
 >## :three:	Workspace 디렉토리 아래 hello.txt 파일을 만든다 
 >>###  $ cd workspace
+>><img width="396" alt="2  workspace로 들어감" src="https://user-images.githubusercontent.com/55985789/82624037-a1746a80-9c1c-11ea-8761-c678405c837f.png">      
+
+                             
 >>###  $ touch Hello.txt
->>#### ls -l로 보면 txt파일에 대한 권한이 [-rw-rw-r--]로 jeong으로 생성 했기에 root와 같은 권한을 갖고 있다.
->><img width="448" alt="4  ws들어가서 Hello.txt 생성" src="https://user-images.githubusercontent.com/55985789/82142727-57d0fc00-9879-11ea-81bc-985407c18b69.png">
+>>#### ls -l로 보면 txt파일에 대한 권한이  root로 되어있다.
+>><img width="401" alt="3  Hello txt 만들기 root로" src="https://user-images.githubusercontent.com/55985789/82624116-c79a0a80-9c1c-11ea-8d0b-3fd2df87aea4.png">
+
+>>###  $ sudo chown jeong:jeong Hello.txt
+>>#### Hello.txt에 대한 권한을 jeong으로 바꾼다. 위와 다르게 권한이 jeong으로 바뀐것을 확인할 수 있다.
+>><img width="502" alt="4 jeong으로 바꿈" src="https://user-images.githubusercontent.com/55985789/82624299-26f81a80-9c1d-11ea-9aba-f7dafa111ec0.png">
+
+
 
 
 ***
