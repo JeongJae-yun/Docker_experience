@@ -32,7 +32,8 @@
 >## :two:	4개 디렉토리 생성하기
 >>###  $ mkdir document (동일하게 download, workspace, bin도 생성)
 >>#### : root계정으로 4개의 디렉토리를 생성한다. 
->><img width="518" alt="1 4개디렉토리 생성하기 root로" src="https://user-images.githubusercontent.com/55985789/82623925-59edde80-9c1c-11ea-8ae8-cae68f3a934e.png">
+>><img width="424" alt="6 ws생성" src="https://user-images.githubusercontent.com/55985789/82624514-bb627d00-9c1d-11ea-8af6-3db9423664a4.png">
+
 
 ****   
 >## :three:	Workspace 디렉토리 아래 hello.txt 파일을 만든다 
