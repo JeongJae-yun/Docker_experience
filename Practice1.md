@@ -54,10 +54,22 @@
 >>#### root권한 생성했을 경우, 없던 write권한이 생겼다..! 
 >><img width="473" alt="새로 파일만들어봄 권한이 다름" src="https://user-images.githubusercontent.com/55985789/82624976-e7323280-9c1e-11ea-949a-55b10b5fc4ec.png">
 
+***
+* * *
+>>#### 그렇다면 그냥 workspace내에서 jeong계정으로 스위칭하고 txt파일 생성하면 유저 계정으로 생성이 될까?:eyes:
+>>#### 해보니 Permission denied라고 나와있다. workspace자체가 root로 만들어져서 그렇지 않을까? :sweat_smile:
+>><img width="454" alt="퍼미션 막힘" src="https://user-images.githubusercontent.com/55985789/82625378-e8b02a80-9c1f-11ea-95e7-d05ab6828ae4.png">
 
->>#### 물론 그냥 jeong 계정으로 들어와서 Hello.txt 파일을 생성해도 Hello.txt에 대한 권한이 root와 jeong이 동일할텐데
->>#### 굳이 root로 생성하고 chown을 써보자고 저렇게 바꾸었다. 
->>#### 그냥 자신의 계정으로 들어와서 생성해도 가능하다!
+>>#### 그래서 한번 workspace에 가서 jeong으로 권한을 바꿔보았다.
+>><img width="579" alt="workspace를 jeong으로 바꾸고" src="https://user-images.githubusercontent.com/55985789/82625535-5eb49180-9c20-11ea-9ed4-ed1066825b33.png">
+
+
+>>#### workspace에 대한 권한을 바꾸고 들어오니 jeong으로 생성이 가능하다!!!:clap:
+>>#### 그리고 아까 root권한으로 생성해서 권한만 jeong으로 바꾼 Hello.txt에 대한 권한과 동일한 것을 확인할 수 있다.!!
+>><img width="547" alt="대따" src="https://user-images.githubusercontent.com/55985789/82625669-bc48de00-9c20-11ea-84f4-c8151ed65dd3.png">
+
+
+
 
 
 
