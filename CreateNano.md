@@ -50,9 +50,6 @@
 >><img width="720" alt="9 이르케 나오고 ctrl+x 써서 빠져나온다" src="https://user-images.githubusercontent.com/55985789/82752040-6e85ce80-9df6-11ea-8c1a-c40626048073.png">
 
 
->>#### 위의 사진에서 enter를 누르면 이렇게 나오고 여기서 ctrl+X를 눌러서 exit하자!
->><img width="720" alt="9 이르케 나오고 ctrl+x 써서 빠져나온다" src="https://user-images.githubusercontent.com/55985789/82752040-6e85ce80-9df6-11ea-8c1a-c40626048073.png">
-
 #### 📆 nano가 vi에디터 보다 훨씬 편하다. vi 에디터는 들어가서도 작성하려면 insert누르고..무튼 할게많다.
 
 
