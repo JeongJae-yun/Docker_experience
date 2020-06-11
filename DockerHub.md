@@ -60,7 +60,7 @@
 
 # 실습을 해보자💥
 
-## :one: (nano+nginx가 포함된) Docker file작성✍(공유폴더를 이용하여!) ➡ 권한을 수정하자!  
+## :one: (공유폴더를 이용하여!) (nano+nginx가 포함된) Docker file작성 
 
 #### 우선적으로 공유폴더를 이용하여야 하는데 공유폴더가 뭐지? 
 #### 💯 공유폴더 = host os(window)와 Docker Engine(linux)가 공유하는 폴더!
@@ -122,6 +122,93 @@ src="https://user-images.githubusercontent.com/55985789/84292972-184cb580-ab82-1
 
 
 ***
+***
+***
+***
+## :two: ⚒ Build Image
+> ### $ docker build --tag mydocker:0.1 
+> #### mydocker라는 이름으로 0.1버전으로 build를 시키자! 뭐가 엄청 나온다..
+> <img src="https://user-images.githubusercontent.com/55985789/84400244-c3ba4080-ac3c-11ea-86ce-bbeedc23d56c.png">
+
+> #### 마지막 부분에 가보면 나온다!! success✅
+> <img src="https://user-images.githubusercontent.com/55985789/84400461-0714af00-ac3d-11ea-9f6e-26443f556383.png">
+
+> #### docker images를 해서 확인해보면 mydocker가 들어있다!!😁
+> <img src="https://user-images.githubusercontent.com/55985789/84400592-31ff0300-ac3d-11ea-876e-3fdee68d729c.png">
+
+
+
+***
+***
+### 우린 mydocker image를 한번에 생성 하는 파일을 공유폴더 이용하여 만들었고 실행시켰고 이제 run만 하면 된다❗❗(간편)
+***
+***
+## :three: Container 생성하자!!
+#### $ docker run --name mydocker-svr -d -p 80:80 mydocker:0.1
+* #### 이름은 mydocker-svr로 실행시키고 daemon으로 포트는 80으로 포워딩하고 실행시킬 image는 mydocker:0.1 버전이다!
+<img src="https://user-images.githubusercontent.com/55985789/84400862-8ace9b80-ac3d-11ea-95e9-f9a35429fb17.png">
+
+* ### docker run 했으니 up되었는지 확인해보자!
+<img src="https://user-images.githubusercontent.com/55985789/84401418-37a91880-ac3e-11ea-9d8c-a94cbbb41bd3.png">
+
+#### 되어있다. 성공✅
+
+* ### 이제 뭘 해야겠어? 포트포워딩 해서 run한거면 당연히 nginx 작동 잘 되는지 봐야지. localhost치자💨
+<img src="https://user-images.githubusercontent.com/55985789/84401631-763ed300-ac3e-11ea-94fb-ccb02b847160.png">
+
+#### 잘 돌아간다. 성공✅
+
+***
+***
+***
+***
+## :four: push로 docker hub에 올리기!! 
+
+***
+#### 일단 무엇보다 도커 허브에 계정이 있어야 한다. 많은 거 요구 안하니 가입하고 이메일 인증하자!!
+#### 🖐 참고로 이메일 인증 안하면 계속 오류 날 수 있다. 꼭 인증하고 이용하자!!
+#### ☝ 하나 더! 내 아이디/비밀번호 까먹지말자! 이따가 docker에서 인증을 요구할 것이다.
+<img src="https://user-images.githubusercontent.com/55985789/84402294-375d4d00-ac3f-11ea-884d-f5767baa012a.png">
+
+***
+
+* ### 아마 처음 가입하고 repositories 들어가보면 이렇게 빈.. 화면이다. 이제 시작하면 된다.
+<img src="https://user-images.githubusercontent.com/55985789/84402571-8d31f500-ac3f-11ea-9a9a-cba56763343e.png">
+
+* ### 도커 허브에 올리기 위해 우선 내 계정 밑에 다시 만들자. 무슨 말이냐고?
+### $ docker build --tag wodbs135/mydocker:0.1   ⬅  아까 한 빌드를 내 계정 밑에 하면 된다.
+<img src="https://user-images.githubusercontent.com/55985789/84401842-b56d2400-ac3e-11ea-98b4-1647ca3e1433.png">
+
+* ### $ docker images를 통해 내 계정 밑에 또 생성 된 것을 볼 수 있다.✅
+<img src="https://user-images.githubusercontent.com/55985789/84403107-47c1f780-ac40-11ea-892a-52ef2bf56e0b.png">
+
+***
+
+* ### 도커에 로그인 하자!!
+### $ docker login 치면 아까 hub에서 가입한 ID/PW를 요구한다. 기억했겠지..😂
+<img src="https://user-images.githubusercontent.com/55985789/84403264-78099600-ac40-11ea-9b0d-849ba6db92c7.png">
+
+### $ docker push wodbs135/mydocker
+* ### push라는 직관적인 단어로 나의 docker에서 docker hub로 올려준다.📤 
+* ### 즉, 이젠 다른 사람들도 내가 만든 나만의 도커 쓸 수 있다. 이 말이다🈁
+<img src="https://user-images.githubusercontent.com/55985789/84403454-b010d900-ac40-11ea-8df0-51e4457bf9be.png">
+
+### 트루인지 도커 허브가서 확인하자!!🧐
+<img src="https://user-images.githubusercontent.com/55985789/84403808-14cc3380-ac41-11ea-89d8-84ce49cd46da.png">
+
+### 올라와있다.😊. 오늘 목표는 성공적이다. 끝❗❗
+#### 🙋‍♂️참고로. push하고서 바로 가서 보면 안 보일 수 있다. 깃헙도 그렇듯 어느정도 격차를 두고 가서 확인해보자.
+
+***
+***
+***
+🗯💬💭
+#### 여지껏 직접 하나 하나 만들던 걸.. 한 번에 모아서 해결하니 너무 속 시원하다.
+#### 오늘 실습에서 기억 할 건, 진정한 의미의 클라우드 = 도커 허브에 내가 직접 Dockerfile을 만들어서 올린 것!!
+#### 그리고 그것을 남들도 사용할 수 있고 나도 어디서든 다운 받아 사용 가능하다는 것👌
+#### 실습을 따라하는 것도 중요하지만 내가 치는 하나하나가 어떤 의미를 갖는지 기억하는 게 더 중요하다고 생각한다.👨‍💻
+
+#### 많이 쌓인 공부 흔적들이..[도커 실습 기록](https://github.com/JeongJae-yun/Docker_experience)👋 헛되지 않게😂 
 
 
 
